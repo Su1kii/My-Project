@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Su1ki's Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: monospace, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        /* Navigation bar styles */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 7%;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 18px;
+            font-weight: lighter;
+            border: 1px solid white;
+            border-radius: 35px;
+            transition: all 0.3s ease;
+            margin: 0 15px;
+        }
+
+        .navbar a:hover {
+            color: black;
+            border-color: black;
+        }
+
+        /* Thin line positioning */
+        .navbar-line {
+            position: absolute;
+            top: 17%;
+            width: 30%;
+            height: 1px;
+            background-color: white;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+          /* Thin line positioning */
+          .navbar-line2 {
+            position: absolute;
+            top: 60%;
+            width: 3%;
+            height: 1px;
+            background-color: white;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Hexagon container positioning */
+        .hexagon-container {
+            margin-top: 200px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .hexagon {
+            width: 100px;
+            height: 100px;
+            background-color: #aa7a7a;
+            position: relative;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            transition: all 0.3s ease;
+            filter: blur(15px);
+        }
+
+        .hexagon:hover {
+            transform: scale(1.1);
+        }
+
+        /* Centered Title and Paragraphs */
+        .centered-title {
+            position: absolute;
+            top: 50%; /* Position "Su1ki" a bit lower */
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 3rem;
+            color: white;
+            font-weight: bold;
+        }
+
+        .centered-paragraph {
+            position: absolute;
+            top: 65%; /* Position "Student" below "Su1ki" */
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1.5rem;
+            color: rgba(32, 29, 29, 0.76);
+            font-weight: lighter;
+        }
+
+        .centered-sub-paragraph {
+            position: absolute;
+            top: 70%; /* Position "Aspiring Software Engineer" below "Student" */
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1.1rem;
+            color: rgba(32, 29, 29, 0.76);
+            font-weight: lighter;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="projects.html">Projects</a>
+    </div>
+
+    <!-- Thin Line Below the Menu -->
+    <div class="navbar-line"></div>
+
+    <div class="navbar-line2"></div>
+
+    <!-- Hexagon Container -->
+    <div class="hexagon-container">
+        <div class="hexagon"></div>
+        <div class="hexagon"></div>
+        <div class="hexagon"></div>
+    </div>
+
+    <!-- Centered Title -->
+    <div class="centered-title">Su1ki</div>
+
+    <!-- Paragraphs under Title -->
+    <div class="centered-paragraph">Student</div>
+    <div class="centered-sub-paragraph">Aspiring Software Engineer</div>
+
+    <!-- Profile Picture -->
+    <div class="profile-container">
+        <img src="img/pfp.jpeg" alt="Profile Picture" class="profile-pic">
+    </div> 
+
+    <script src="js/Style.js"></script>
+</body>
+</html>

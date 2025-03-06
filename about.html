@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Su1ki's Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: monospace, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Aligns the navbar just below the top */
+        }
+
+        /* Navigation bar styles */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 7%; /* Positioned around 1/8 of the page height */
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white; /* Default color of the text */
+            padding: 15px 25px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 18px;
+            font-weight: lighter; /* Thinner font */
+            border: 1px solid white; /* Thinner white outline */
+            border-radius: 35px; /* Rounded corners */
+            transition: all 0.3s ease; /* Smooth animation for both text and outline */
+            margin: 0 15px; /* Small space between menu items */
+        }
+
+        .navbar a:hover {
+            color: black; /* Text turns black on hover */
+            border-color: black; /* Outline turns black on hover */
+        }
+
+        /* Thin line positioning */
+        .navbar-line {
+            position: absolute;
+            top: 17%; /* Line further below the menu */
+            width: 30%; /* Line is smaller and not across the entire screen */
+            height: 1px;
+            background-color: white; /* Thin white line */
+            margin-left: auto;
+            margin-right: auto; /* Centers the line */
+        }
+
+        /* Hexagon container positioning */
+        .hexagon-container {
+            margin-top: 200px; /* Adjust space for hexagons */
+            display: flex;
+            justify-content: center;
+            gap: 40px; /* Increased gap for more spread */
+        }
+
+        .hexagon {
+            width: calc(80px + (random() * 60px)); /* Random size between 80px to 140px */
+            height: calc(80px + (random() * 60px)); /* Random height */
+            background-color: #aa7a7a;
+            position: relative;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            transition: all 0.3s ease;
+            filter: blur(15px);
+        }
+
+        /* Add animation to the hexagons to create some randomness */
+        .hexagon:hover {
+            transform: scale(1.1);
+        }
+
+        /* About Section */
+        .about {
+        text-align: center;
+        color: rgba(255, 255, 255, 0.801);
+        padding: 230px; /* Added padding for spacing */
+        margin-top: 0;
+        max-width: 800px;
+        width: 100%; /* Make sure it's full width within max width */
+        height: 70%;
+        position: absolute;
+    }
+
+        .about h1 {
+        font-size: 50px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        height: 5;
+    }
+
+        .about p {
+        font-size: 20px;
+        line-height: 1.6;
+        margin: 0 auto;
+        height: 5%;
+    }
+
+    
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="projects.html">Projects</a>
+        <a href="img/STEVEN_ECHEVERRIANAVA_Resume.pdf" class="reusme-link" target="_blank">Resume</a>
+    </div>
+
+    <!-- Hexagon Container -->
+    <div class="hexagon-container">
+        <div class="hexagon"></div>
+        <div class="hexagon"></div>
+        <div class="hexagon"></div>
+    </div>
+    
+    <div class="navbar-line"></div>
+
+    <!-- About Section -->
+    <section class="about">
+        <h1>About</h1>
+        <p>This is my first-ever project, where I attempted to create an e-portfolio website to showcase my skills and experience. I wanted to design a platform that highlights my journey in computer science while also allowing me to practice web development using HTML, CSS, and JavaScript. This project represents my initial step toward building a strong foundation in software development and personal branding.
+            Please look at the top of the page, a resume button should have appeared. Feel free to check it out!
+        </p>
+        
+    
+
+    <script src="js/Style.js"></script>
+</body>
+</html>
